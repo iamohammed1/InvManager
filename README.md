@@ -15,8 +15,6 @@ As part of my Django learning journey, I built this full-featured inventory mana
 - **Modern form handling** with Django Crispy Forms
 - **Data validation** for inventory integrity
 
-![Dashboard](screenshots/dashboard.png)  
-*Home dashboard with quick actions*
 
 ## Features ✨
 - 📋 Product catalog with ID/SKU tracking
