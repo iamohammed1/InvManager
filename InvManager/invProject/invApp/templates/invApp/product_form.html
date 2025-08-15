@@ -1,0 +1,37 @@
+{% extends "invApp/layout.html" %}
+
+{% block title %}Product Form{% endblock %}
+
+{% block content %}
+<div class="container" style="margin-top: 80px;">
+    <h1 class="text-center">Product Form</h1>
+    
+    <!-- استبدال الجومبترون بالنسخة الحديثة -->
+    <div class="custom-form-container">
+        <form method="POST">
+            {% csrf_token %}
+            
+            <!-- تحسين عرض الفورم -->
+            <div class="form-group">
+                {{ form.as_p }}
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Save Product</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    /* ستايلات متوافقة مع Tutorial لكن محدثة */
+    .custom-form-container {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .btn-block {
+        width: 100%;
+    }
+</style>
+{% endblock %}

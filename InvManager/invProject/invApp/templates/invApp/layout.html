@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Inventory App{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            padding-top: 56px;  /* يتناسب مع شريط التنقل الثابت */
+        }
+
+        .navbar {
+            background-color: #343a40;  /* لون خلفية الشريط */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* إضافة ظل */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;  /* لون النصوص الأبيض */
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: #f8f9fa !important;  /* لون عند التمرير */
+        }
+
+        .container {
+            margin-top: 20px;
+            padding-bottom: 20px;  /* مسافة إضافية أسفل المحتوى */
+        }
+
+        .table th, .table td {
+            vertical-align: middle;  /* محاذاة العناصر في الجداول */
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            
+            <!-- Brand/Logo -->
+            <a class="navbar-brand" href="{% url 'home' %}">
+                Inventory App
+            </a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Collapsible Menu Content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    
+                    <!-- Add Product Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'product_create' %}">
+                            Add Products
+                        </a>
+                    </li>
+                    
+                    <!-- View Products Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'product_list' %}">
+                            Show Products
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Bundle (required for navbar toggler) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
