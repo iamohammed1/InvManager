@@ -26,9 +26,8 @@ As part of my Django learning journey, I built this full-featured inventory mana
 - 📱 Mobile-optimized interface
 
 ## Screenshots 📸
-| Products List | Add Product | Delete Confirmation |
-|---------------|-------------|---------------------|
-| ![image alt](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/home.png)
+
+![image alt](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/home.png)
 ![image alt](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/list.png)
 ![Product List](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/products.png) 
 
