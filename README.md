@@ -28,7 +28,9 @@ As part of my Django learning journey, I built this full-featured inventory mana
 ## Screenshots 📸
 | Products List | Add Product | Delete Confirmation |
 |---------------|-------------|---------------------|
-| ![home([screenshots/list.png](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/home.png)) | ![Add Product]([screenshots/add.png](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/list.png)) | ![Product List]([screenshots/delete.png](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/products.png)) |
+| ![image alt](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/home.png)
+![image alt](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/list.png)
+![Product List](https://github.com/iamohammed1/InvManager/blob/3dc7f10dc6a36e14eee192a399811c07858db2c5/products.png) 
 
 ## Tech Stack
 - **Backend**: Django 5.2.5
