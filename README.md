@@ -1,4 +1,3 @@
-# InvManager
 # InvManager 📦  
 
 **Inventory Management System** - Built with Django while learning web development  
